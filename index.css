@@ -1,0 +1,183 @@
+:root {
+    --black: rgba(56, 61, 64, 1);
+    --white: rgba(255, 255, 255, 1);
+    --gray: rgba(102, 102, 102, 1);
+    --light-blue: rgba(242, 248, 255, 1);
+    --blue: rgba(39, 124, 251, 1);
+}
+
+.container {
+    max-width: 1170px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.relative {
+    position: relative !important;
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.logo {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+.link-header {
+    padding: 1.8rem 1.5rem;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.link-header:hover {
+    text-decoration: none;
+}
+
+#carouselExampleControls.carousel-indicators {
+    bottom: 15%;
+}
+
+.indicator {
+    background-color: var(--white) !important;
+    height: 14px !important;
+    width: 14px !important;
+    border-radius: 50%;
+}
+
+.indicator.active {
+    background-color: var(--black) !important;
+}
+
+.heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 140%;
+    margin-bottom: 3rem;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.text {
+    color: var(--gray);
+}
+
+.bg-light-blue {
+    background-color: var(--light-blue);
+}
+
+.wrapper {
+    width: 330px;
+    font-family: 'Helvetica';
+    font-size: 14px;
+}
+
+.StepProgress {
+    position: relative;
+    padding-left: 45px;
+    list-style: none;
+}
+
+
+.StepProgress-item {
+    position: relative;
+    counter-increment: list;
+}
+
+.StepProgress-item:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+.StepProgress-item::before {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    left: -9%;
+    height: 100%;
+    width: 30px;
+}
+
+.StepProgress-item::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -37px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FFF;
+}
+
+
+.StepProgress-item.current::before {
+    border-left: 2px solid var(--gray);
+}
+
+.StepProgress-item.current::after {
+    content: counter(list);
+    width: 30px;
+    height: 30px;
+    top: -4px;
+    left: -40px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    border: 2px solid var(--blue);
+}
+
+.StepProgress-item.current.is-current::after {
+    background-color: var(--blue);
+    color: var(--white);
+}
+.StepProgress-item.current.is-current strong{
+    color: var(--blue);
+}
+.StepProgress-item.current.last::before{
+    display: none;
+}
+.StepProgress strong {
+    display: block;
+}
+
+.card {
+    border: none !important;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.07);
+}
+
+.bg-blue{
+    background-color: var(--blue);
+}
+.rounded-full{
+    border-radius: 50%;
+}
+.rounded-md{
+    border-radius: 1rem;
+}
+
+.sub-heading{
+    font-weight: 600;
+}
+
+.btn.active{
+    background-color: var(--blue);
+    color: var(--white);
+}
+.text-white{
+    color: var(--white);
+}
+.card2{
+
+}
